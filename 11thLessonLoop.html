@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11th Lesson -- Loop</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/vue.js"></script>
+</head>
+<body>
+    <div id="vue-app">
+    <p>11th Lesson -- Loop</p>
+
+    <h2>Example 1 -- Linear Array into loop</h2>
+    <ul>
+        <li v-for="(num, index) in person">{{++index}}. {{num}}</li>
+    </ul>
+    <h2>Example 2 -- Multi langual Array into loop</h2>
+    <ul>
+        <li v-for="(nums, index) in person_age"> {{++index}}. {{nums.name+"-"+nums.age}}</li>
+    </ul>
+    <h1>Using vue js template element</h1>
+    <template v-for="(nums, index) in person_age">
+        <p>{{++index}}. {{nums.name+" "+nums.age}}<p>
+    </template>
+    ____________________________________
+    <template v-for="nums in person_age">
+        <p v-for="(val, key) in nums">{{key.toUpperCase()}}. {{val}}</p>
+    </template>
+    </div>
+    <script src="./js/11thLessonLoop.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vue.js"></script>
+    <title>4th Lesson -- Event</title>
+</head>
+<body>
+    <div id="vue-app">
+        <h1>Vue js Event Tutorial</h1>
+        <p>1st Increase / Decreasing Age by clicking Button</p>
+        <button id="inc" type="button" v-on:click="inc_age">Add 1</button>
+        <button id="inc" type="button" v-on:click="dec_age">Subtract 1</button>
+    
+        <h3>Age: {{age}}</h3>
+
+        <p>1st Increase / Decreasing Age 10 times by clicking Button</p>
+        <button type="button" @dblclick="inc_age_10(10)">Add 10</button>
+        <button type="button" @dblclick="dec_age_10(10)">Subtract 10</button>
+        <h3>Age: {{ageTen}}</h3>
+
+        <div id="canvas" v-on:mousemove="updateDiv">{{x}},{{y}}</div>
+    </div>
+   
+    <script src="js/4thLessonEvent.js"></script>
+</body>
+</html>

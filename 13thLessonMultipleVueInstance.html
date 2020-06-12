@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/vue.js"></script>
+    <title>13th Lesson -- Multiple Vue Instance </title>
+</head>
+<body>
+    <h1>13th Lesson -- Multiple Vue Instance </h1>
+
+    <div id="appOne">
+        <h2>1 Vue App One Example</h2>
+        <h1>1 {{title}}</h1>
+
+        <h2>1 Calling from computed function "{{greet}}"</h2>
+    </div>
+
+    <div id="appTwo">
+        <h2>2 Vue App Two Example</h2>
+        <h1>2 {{title}}</h1>
+        <h2>2 Calling from computed function "{{greet}}"</h2>
+        <button v-on:click= "changeTitle">Click to chnage App one title</button>
+    </div>
+    <script src="./js/13thLessonMultipleVueInstance.js"></script>
+</body>
+</html>

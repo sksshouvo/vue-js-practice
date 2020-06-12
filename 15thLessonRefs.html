@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15th Lesson Refs</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vue.js"></script>
+</head>
+<body>
+    <div id="newApp">
+        <h3>$Refs Vue js example</h3>
+        <input type="text" ref="text_input">
+        <button v-on:click="get_info">Submit</button>
+        <p>You name is: {{name}}</p>
+
+        <p ref="changeIt">{{nameIt}}</p>
+    </div>
+    
+    <script src="js/15thLessonRefs.js"></script>
+</body>
+</html>

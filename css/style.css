@@ -1,0 +1,45 @@
+#canvas{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    text-align: center;
+}
+.tim{
+    background-color: red;
+    color: white;
+    height: 50px;
+    width: 100px;
+}
+.available .tim{
+    background-color: green;
+    color: white;
+}
+
+.nearby .tim::before{
+    content: "New";
+    margin-right: 10px;
+}
+
+#game *{
+text-align: center;
+}
+
+#bag{
+    width: 200px;
+    height: 400px;
+    background: url('../img/Punchbag1.png') center center no-repeat;
+    margin: 0 auto;
+}
+#bag.burst{
+    background: url('../img/Punchbag2.png') center center no-repeat;
+}
+#bag_health{
+    border: 1px solid black;
+    width: 200px;
+    margin: 0 auto;
+}
+
+#bag_health div{
+    height: 20px;
+    background-color: crimson;
+}

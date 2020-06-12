@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vue.js"></script>
+   
+    <title>6th Lesson Keyboard Event</title>
+</head>
+<body>
+    <h2>6th Lesson Keyboard Event</h2>
+    <div id="vue-app">
+        <label for="full_name">Full Name: </label>
+        <input type="text" name="full_name" id="full_name" v-on:keyup.enter="submit_name">
+        <br>
+        <label for="age">Age: </label>
+        <input type="text" name="age" id="age" v-on:keyup.alt.enter="submit_age">
+    </div>
+
+<script src="js/6thLessonKeyboardEvent.js"></script>    
+</body>
+</html>

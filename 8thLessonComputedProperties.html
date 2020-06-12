@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8th Lesson Computed Properties</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vue.js"></script>
+</head>
+<body>
+    <h2>8th Lesson Computed Properties</h2>
+    <div id="vue-app">
+        <label for="addToA">Add To A</label>
+        <input type="button" value="Add to A" v-on:click="a++" >
+        <br>
+        <label for="a">A = {{a}}</label>
+        <h2>Ab + A = {{addToA}}</h2>
+        <br>
+
+        <label for="addToB">Add To B</label>
+        <input type="button" value="Add to B" v-on:click="b++" >
+        <br>
+        <label for="b">B = {{b}}</label>
+        <h2>Ab + B = {{addToB}}</h2>
+    </div>
+    <script src="js/8thLessonComputedProperties.js"></script>
+</body>
+</html>

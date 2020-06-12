@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10th Lesson -- DYnamic Css Classes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vue.js"></script>
+</head>
+<body>
+    <div id="vue-app">
+        <h2>10th Lesson -- Conditionals</h2>
+        <h2>Example 1</h2>
+        <button type = "button" v-on:click="error =!error">Toggle Error</button>
+        <button type = "button" v-on:click="tanha =!tanha">Toggle Success</button>
+        <p v-if="error">This error is true</p>
+        <!-- <p v-if="tanha">This success is true :)</p> -->
+        <p v-else-if="tanha">This success is true :)</p>
+
+        <h2>Example 2</h2>
+        <button type = "button" v-on:click="error1=!error1">Toggle Error</button>
+        <button type = "button" v-on:click="success1 =!success1">Toggle Success</button>
+        <p v-show="error1">Now this second error example</p>
+        <p v-show="success1">Now this second success example</p>
+    </div>
+    
+    <script src="js/10thLessonConditionals.js"></script>
+</body>
+</html>
